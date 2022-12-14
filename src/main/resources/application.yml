@@ -1,0 +1,18 @@
+#conatct service 2 for microservice intgeration
+#server.port=8081
+#eureka.client.register-with-eureka=false
+#eureka.client.fetch-registry=false
+#eureka.server.wait-time-in-ms-when-sync-empty=0
+#eureka.client.service-url=${http://localhost:8761/eureka/}
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  server: 
+    wait-time-in-ms-when-sync-empty: 0
+  instance:
+    hostname: localhost
+spring:
+  application:
+    name: user-service
